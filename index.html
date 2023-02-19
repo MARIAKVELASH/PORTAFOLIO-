@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Desafio-1</title>
+        <link rel="stylesheet" href="archivo.css">
+        <script type="text/javascript" src="scrip.js"> </script>
+    </head>
+    <body class= "container">
+            <div class= "logo"> 
+                <img class="logo-img" src="inmagenes/Logo.png" alt="logo de alura">
+                <h1 class="tittle">Encriptador de Mensajes</h1>
+            </div>
+            <div class= "left">
+                <input class="text-input" id="input texto" type="text" placeholder="ingrese el texto aqui">
+             </div>
+            <div class= "right">
+                <img src="inmagenes/Muñeco.png" alt="Muñeco de alura" id="imagen">
+                <h2 id="texto">ningun mensaje fue encontrado</h2>
+                <textarea name="" id="texto2" cols="30" rows="10">ingrese el texto que deseas encriptar o desencriptar</textarea> 
+                <button id="copiar()" type="button" name="button">¡copiar!</button>
+            </div>
+                <div class="left-booton">
+                    <p>solo minusculas y sin acentos.</p>
+                    <button type="button" id="encriptar" >Encriptar</button>
+                    <button type="button" id="deseencriptar">Desencriptar</button>
+                    <button type="button" id="copiar">copiar</button>
+                <script>
+                    var btn= document.querySelector("#encriptar");
+                    btn.onclick=  encriptar;
+
+                    var btn= document.querySelector("#deseencriptar");
+                    btn.onclick= deseencriptar ;
+                    var btn= document.querySelector("#copiar");
+                    btn.onclick= copiar;
+
+
+
+                </script>
+                
+                
+                </div>
+
+                
+                
+    </body>
+
+
+</html>
